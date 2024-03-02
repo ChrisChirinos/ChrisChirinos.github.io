@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web :v</title>
+    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/3551/PNG/512/calories_food_nutrition_icon_224871.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+
+        <div class="Logo">
+            <img src="calories_food_nutrition_icon_224871.png" height="70">
+        </div>
+
+        <nav class="navbar">
+            <a href="#start">Inicio</a>
+            <a href="#sect1">Calculadora de IMC</a>
+            <a href="#sect2">Relacion con la Grasa Corporal</a>
+            <a href="#sect3">Uso del IMC</a>
+            <a href="#sect4">Consecuencias de la obesidad</a>
+        </nav>
+
+    </div>
+
+    <header id="start" class="content header">
+        <h2 class="title1">Inicio</h2>
+        <p>
+            El índice de masa corporal (IMC) es el peso de una persona en kilogramos dividido por el cuadrado de la estatura en metros. 
+            El IMC es un método de evaluación fácil y económico para la categoría de peso: bajo peso, peso saludable, sobrepeso,
+            y obesidad.El IMC no mide la grasa corporal directamente, 
+            pero el IMC se correlaciona moderadamente con medidas más directas de la grasa corporal1,2,3. 
+            Además, el IMC parece estar tan fuertemente correlacionado con diversos resultados metabólicos y de enfermedades como lo están estas medidas más directas de la grasa corporal4-9.
+        </p>
+        
+    </header>
+    <section  id="sect1"   class="content imc">
+     <label for="peso">Peso(kg):</label>
+     <input type="number" id="peso" name="peso"><br>
+     <label for="altura">Altura(cm):</label>
+     <input type="number" id="altura" name="altura"><br>
+     <button onclick="calcularimc()">Calcular IMC</button>
+     <p id="resultado"></p>
+     <script>
+        function calcularimc(){
+        var peso = document.getElementById("peso").value;
+        var altura = document.getElementById("altura").value
+        var imc = peso / Math.pow(altura/100, 2);
+        document.getElementById("resultado").innerHTML = "Tu IMC es: " + imc.toFixed(2);
+      } 
+     </script>
+    </section>
+    <section id="sect2" class="content sau">
+        <h2 class="title">El IMC como indicador de la grasa corporal</h2>
+        <p>La correlación entre el IMC y la grasa corporal es bastante fuerte1,2,3,7, pero incluso si dos personas tienen el mismo IMC, su nivel de grasa corporal puede ser diferente12.
+
+            En general,
+            
+            Con el mismo IMC, las mujeres tienden a tener más grasa corporal que los hombres.
+            Con el mismo IMC, la cantidad de grasa corporal puede ser mayor o menor según el grupo racial/étnico13-15.
+            Con el mismo IMC, los adultos mayores, en promedio, tienden a tener más grasa corporal que los adultos más jóvenes.
+            Con el mismo IMC, los deportistas tienen menos grasa corporal que los no deportistas.
+            La precisión del IMC como indicador de la grasa corporal también parece ser mayor en personas con niveles más altos de IMC y grasa corporal16. Si bien es muy probable que una persona con un IMC muy alto (por ejemplo, 35 kg / m2) tenga una grasa corporal alta, un IMC relativamente alto puede ser el resultado de una grasa corporal alta o una masa corporal magra alta (músculos y huesos). Un proveedor de atención médica capacitado debe realizar las evaluaciones de salud adecuadas para evaluar el estado de salud y los riesgos de una persona.
+        </p>
+    </section>
+        
+    <section id="sect3" class="content about">
+<h2 class="title">¿Cómo se usa el IMC?</h2>
+<p>El IMC se usa como una herramienta de detección, pero no diagnostica la grasa corporal ni la salud de un individuo10. 
+    Para determinar si el exceso de peso es un riesgo para la salud, un proveedor de atención médica necesitará realizar evaluaciones adicionales. 
+    Estas evaluaciones pueden incluir la medición del grosor de los pliegues cutáneos, evaluaciones de la alimentación, la actividad física, y los antecedentes familiares.</p>
+     <a href="#" class="btn">Saber mas</a>
+    </section>
+
+    <section id="sect4" class="content price">
+        <article class="contain">
+            <h2 class="title">consecuencias de la obesidad</h2>
+            <p>Las personas que tienen obesidad tienen un mayor riesgo de padecer muchas enfermedades y afecciones, incluidas las siguientes 10, 17, 18:
+
+                Todas las causas de muerte (mortalidad)
+                Presión arterial alta (hipertensión)
+                Colesterol LDL alto, colesterol HDL bajo o niveles altos de triglicéridos (dislipidemia)
+                Diabetes tipo 2
+                Enfermedad coronaria
+                Derrame cerebral
+                Enfermedad de la vesícula
+                Osteoartritis (ruptura del cartílago y hueso dentro de una articulación)
+                Apnea del sueño y problemas respiratorios
+                Inflamación crónica y aumento del estrés oxidativo19,20
+                Algunos cánceres (de endometrio, mama, colon, riñón, vesícula biliar e hígado)
+                Baja calidad de vida
+                Enfermedad mental como depresión clínica, ansiedad y otros trastornos mentales21,22
+                Dolor corporal y dificultad para el funcionamiento físico23
+            </p>
+         </article>
+
+    </section>
+    <section id="integrantes" class="content menber"> <br>
+        <h3>Integrantes </h3>
+    <p> Santiago Belisario 
+         Christian Chirinos
+         Rodrigo Yepez
+         6 A
+    </p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+ }
+
+ body {
+    text-align: center;
+    font-family: sans-serif;
+    min-height: 350vh;
+    max-width: auto;
+ }
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+    background: rgb(219, 134, 134);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.Logo{
+    margin-left: 0px;
+    height: 67px;
+    width: 9rem;
+    background: #928e8e;
+    text-align: center;
+    border-radius: 1px;
+}
+.navbar {
+    display: flex;
+    margin-right: 5px;
+}
+.navbar a{
+    display: block;
+    padding: 20px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar a:hover{
+    background: rgb(248, 189, 189);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    height: 90vh !important;
+    background: url(1140-bmi-health-esp.jpg) no-repeat center;
+    background-size:  90rem;
+}
+.title1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #171717;
+}
+p{
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #171717;
+    padding: 0 100px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27ba;
+    text-decoration: none;
+    background: #9c27ba;
+}
+.btn-home{
+    display: flex;
+}
+.btn-home a{
+    margin: 0 10px;
+}
+.btn:hover{
+    background: none;
+}
+.content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sau{
+    padding: 30px;
+    background: #fff;
+}
+.sau h2{
+    font-size: 30px;
+}
+.about{
+    background: #e79090;
+    height: auto;
+}
+.about h2{
+    font-size: 30px;
+}
+.price{
+    background: #64f0b5;
+    height: auto;
+    font-size: 28;
+}
+.price h2{
+    font-size: 30px;
+}
+.menber {
+    height: 20rem;
+    background: #f1efef;
+    display: flex;
+    font-size: 30px;
+}
+
+@media (max-width:768px){
+
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .sau{
+        height: 300vh;
+    }
+    .navbar{
+        display: none;
+    }
+    .imc{
+        height: 300vh;
+    }
+}
+.imc{
+    background: #64f0b5;
+    color: #000000;
+    font-size: 30px;
+    display: flex;
+}
